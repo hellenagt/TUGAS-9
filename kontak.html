@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		body {
+			font-family: arial;
+			font-size: 18px;
+			background-color: #FFE4B5;
+		}
+		input {
+			font-family: arial;
+			font-size: 18px;
+
+		}
+		button a{
+			font-family: arial;
+			font-size: 18px;
+			text-decoration: none;
+			color: black;
+		}
+		select {
+			font-family: arial;
+			font-size: 18px;
+			width: 220px;
+		}
+		textarea {
+			font-family: arial;
+			font-size: 18px;
+			width: 215px;
+		}
+	</style>
+</head>
+<body>
+	<h1><center>Form Isi</center></h1>
+	<br>
+	<form action="simpan_kontak.php" method="POST">
+		<table width="400" align = "center" cellpadding="4" cellspacing="9">
+			<tr>
+				<td width="130">Nama</td>
+				<td><input type="Text" name="nama"></td>
+			</tr>
+			<tr>
+				<td width="130">Jenis Kelamin</td>
+				<td><input type="radio" name="jkel" value="Laki-Laki"> laki-laki
+					<input type="radio" name="jkel" value="Perempuan"> perempuan</td>
+			</tr>
+			<tr>
+				<td width="130">Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td width="130">Alamat</td>
+				<td><input type="text" name="alamat"></td>
+			</tr>
+			<tr>
+				<td width="130">Kota</td>
+				<td>
+				<select name="kota">
+				<option value="Surabaya">Surabaya</option>
+				<option value="Sidoarjo">Sidoarjo</option>
+				<option value="Tulungagung">Tulungagung</option>
+				<option value="Gresik">Gresik</option>
+				<option value="Mojokoerto">Mojokoerto</option>
+				<option value="Jombang">Jombang</option>
+				<option value="Kediri">Kediri</option>
+				<option value="Blitar">Blitar</option>
+				<option value="Malang">Malang</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td width="130">Pesan</td>
+				<td><textarea name= "pesan"></textarea></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="3">
+					<br>
+					<input type="submit" name="btnlogin" value="Submit">
+					<input type="reset" name="reset" value="Reset">
+					<button><a href="indeks.php">Admin</a></button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</center>
+
+
+</body>
+</html>
